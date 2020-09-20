@@ -1,0 +1,365 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+/* global css file here*/
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+h1,h2{
+	font-family: 'Alfa Slab One', cursive;
+}
+h3,h4,h5,h6,a{
+	font-family: 'Bebas Neue', cursive;
+	
+}
+p,span,input{
+	font-family: 'Montserrat', sans-serif;
+}
+.container{
+	width: 1140px;
+	margin: auto;
+}
+/* Start Header css */
+.header{
+	width: 100%;
+	background: url(./img/banner.png) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+.nav-bar{
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.menu-item{
+	display: flex;
+	text-align: right;
+	align-items: center;
+}
+.menu-item ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 25px;
+}
+.menu-item ul li a{
+	text-decoration: none;
+	font-size: 18px;
+	letter-spacing: 3px;
+	color: #3d2514;
+	transition: 0.5s ease-in-out;
+}
+.menu-item ul li a:hover{
+	color: red;
+	
+}
+.banner-text{
+	display: flex;
+	height: 60vh;
+	align-items: center;
+}
+.banner-text .text h3{
+	border: 2px dashed #3d2514;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+.banner-text .text h1{
+	font-size: 83px;
+	color: #3d2514;
+	letter-spacing: 4px;
+	text-shadow: 3px 2px #fff;
+}
+.banner-text .text h2{
+	font-size: 43px;
+	color: #3d2514;
+	letter-spacing: 4px;
+  text-shadow: 3px 2px #fff;
+}
+
+
+/* End Header css */
+/* Start Blog css */
+
+
+
+.blog-gallery{
+	width: 100%;
+	padding: 70px 0;
+}
+.gallery{
+	display: flex;
+	justify-content: space-around;
+}
+.gallery-left{
+	position: relative;
+	padding: 15px;
+}
+.post-text h4{
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.post-text h3{
+	text-transform: uppercase;
+	font-size: 36px;
+  letter-spacing: 2px;
+}
+.gallery-right{
+	padding: 15px;
+
+}
+.top{
+	margin-bottom: 28px;
+}
+.top,.bottom{
+	position: relative;
+}
+.post-text{
+	position: absolute;
+  top: 30px;
+  color: white;
+  left: 40px;
+}
+.blog-gallery .button{
+	text-align: center;
+	margin: 10px 0;
+}
+.blog-gallery .button button{
+	padding: 16px 20px;
+  background: transparent;
+  border: none;
+  border: 1px solid red;
+  background: red;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+
+
+/* END Blog css */
+/* Start Order css */
+ .order-area{
+	width: 100%;
+}
+.order-container .order-title{
+	text-align: center;
+}
+.order-container .order-title h2{
+	font-size: 43px;
+	color: #3d2514;
+  letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.order-element{
+	margin: 40px 0;
+	display: flex;
+}
+.order-item{
+	padding: 15px;
+	text-align: center;
+}
+.order-item h2{
+	font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.order-item p{
+	margin-bottom: 30px;
+}
+.order-item button{
+	  padding: 15px 25px;
+    background: red;
+    border: none;
+    border: 1px solid red;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 900;
+    letter-spacing: 3px;
+} 
+/* End Order css */
+/* start event owl carousel css */
+.event{
+	padding: 70px 0;
+}
+.event-body{
+	width: 100%;
+	padding: 5px;
+	display: flex;
+}
+.item{
+	box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+.event-text{
+	margin: 40px 20px 0px;
+}
+.event-text h4{
+	font-size: 26px;
+}
+.event-text h3{
+	font-size: 43px;
+}
+.owl-carousel .owl-item img {
+  display: block;
+	width: 98%;
+}
+.owl-carousel .owl-dots .owl-dot.active span{
+	background: #ffc045;
+	width: 12px;
+	height: 12px;
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+ text-align: start;
+ margin-left: 20px;
+}
+/* end event owl carousel css */
+/* start contact css */
+.contact{
+	width: 100%;
+  background: url(./img/burder-s.png) no-repeat top;
+  background-size: cover;
+  height: 90vh;
+  padding-top: 60px;
+}
+.contact-title {
+	text-align: center;
+}
+.contact-title h4 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 29px;
+	color: #3d2514;
+}
+.contact-title h1 {
+	font-family: 'Alfa Slab One', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  color: #3d2514;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.form-part{
+	text-align: center;
+	margin-top: 60px;
+}
+
+.form-part input {
+    width: 347px;
+    padding: 16px;
+    margin: 34px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+		font-family: 'Bebas Neue', cursive;
+	}
+.form-part input:last-child{
+    background: transparent;
+    border: none;
+    background: red;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+		letter-spacing: 1px;
+		text-align: center;
+}	
+/* end contact css */
+.footer {
+	background:url(./img/img3.png) no-repeat center;
+	background-size: cover;
+	height:500px;
+	color: #fff;
+}
+.overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+}
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+.footer-content .footer-left{
+	width: 60%;
+}
+.footer-left img{
+	width: 60%;
+}
+.footer-left p{
+	font-size: 17px;
+  margin: 30px 0;
+}
+
+.footer-content .footer-right{
+	width: 30%;
+	margin-top: 90px;
+}
+.footer-right .location{}
+.footer-right .location i{
+	font-size: 30px;
+	line-height: 60px;
+}
+
+.footer-right .location span{
+	margin-left: 20px;
+}
+.footer-right .location span:last-child{
+	margin-left: 10px;
+
+}
+ .bottom-sec{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+.footer-right .bottom-sec .left{}
+.bottom-sec .right{}
+.bottom-sec .right .icon-sec{
+	margin: 0 50px;
+}
+.icon-sec .list-inline{}
+.icon-sec .list-inline li{
+	text-align: center;
+	line-height: 55px;
+	list-style: none;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #fff;
+	margin-left: 8px;
+	cursor: pointer;
+	transition: .4s ease-in-out;
+	
+}	
+.icon-sec .list-inline a{
+	text-decoration: none;
+	
+
+}
+
+
+.icon-sec .list-inline li a i{
+	font-size: 25px;
+	color: #3d2514;
+	
+
+}
+.icon-sec .list-inline li:hover{
+	background: transparent;
+	color: #fff;
+
+}
+
+
+
+
+
+
+
